@@ -8,7 +8,6 @@ if [ "$#" -eq 0 ]; then
     echo " [pipewire]  -  Pipewire mono playback"
     echo " [yazi]      -  Yazi"
     echo " [zsh]       -  ZSH + Starship"
-    echo " [starship]  -  Starship (w/o shell)"
     exit 0
 fi
 
@@ -44,6 +43,7 @@ for config in "$@"; do
             rm -rf ~/.zshrc
             ln -sf "$DIRNAME"/zsh/.zshrc ~/
             ln -sf "$DIRNAME"/zsh/.zsh_plugins.txt ~/
+            ln -sf "$DIRNAME"/starship.toml ~/.config
         ;;
         *)
             echo " Unknown Config: $config"
