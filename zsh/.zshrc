@@ -25,6 +25,9 @@ alias -g zp="~/.zsh_plugins.txt"
 alias ..="cd .."
 alias -g G="| grep"
 
+# Other
+alias zrephist="strings ~/.zsh_history > ~/.zsh_history"
+
 
 #---[ Binds ]--------------------------------------------------------
 bindkey "^H" backward-kill-word
